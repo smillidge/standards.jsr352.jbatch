@@ -36,6 +36,7 @@ public class BatchProducerBean {
     private final static Logger logger = Logger.getLogger(sourceClass);
 
     @Produces
+    @BatchProperty
     @Dependent
     public String produceProperty(InjectionPoint injectionPoint) {
 
